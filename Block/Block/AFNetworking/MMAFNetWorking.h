@@ -10,12 +10,18 @@
 
 @class AFHTTPSessionManager;
 
+/**
+ 根据AFNetWorking定义三个block.
+ */
 typedef void(^success) (NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject);
 typedef void(^failure) (NSURLSessionDataTask * _Nonnull task, id  _Nullable error);
 typedef void(^uploadProgress) (NSProgress *_Nonnull);
 
 @interface MMAFNetWorking : NSObject
 
+/**
+ 把block弄成属性.这一步也可以省略.
+ */
 @property (nonatomic,copy) success _Nullable successBlock;
 @property (nonatomic,copy) failure _Nullable failureBlock;
 
