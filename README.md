@@ -1,0 +1,2 @@
+# SingletonUseBlockEncapsulationAFNetWorking
+学习block 简单的单利实现 afnetworking 封装
